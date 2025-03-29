@@ -1,33 +1,120 @@
+/* Sfondi i faqes dhe stili i përgjithshëm */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    margin-top: 30px;
-}
-
-h2 {
-    margin-top: 40px;
-}
-
-ul {
-    list-style-type: none;
+    background-color: #f4f4f9; /* Ngjyrë e butë gri për sfondin */
+    color: #333333; /* Ngjyra e tekstit të zezë për kontrast */
+    margin: 0;
     padding: 0;
 }
 
-li {
-    margin: 10px;
+/* Titulli kryesor */
+h1 {
+    color: #007bff; /* Ngjyrë blu për titullin */
+    font-size: 2.5em;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+/* Container i faqes */
+.container {
+    background: #ffffff; /* Sfond i bardhë për containerin */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+/* Titulli i seksionit të kanaleve */
+h2 {
+    color: #333333; /* Ngjyra e titullit për seksionin e kanaleve */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Lista e butonave të kanaleve */
+.kanale {
+    list-style: none;
+    padding: 0;
+}
+
+/* Butonat për kanale */
+.kanale button {
+    background: #007bff; /* Ngjyrë blu për butonat */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
     font-size: 18px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
 }
 
-a {
+/* Efekti i hover për butonat */
+.kanale button:hover {
+    background: #0056b3; /* Ngjyrë më e errët blu kur kaloni me maus mbi buton */
+}
+
+/* Shfaqja e linkeve M3U */
+.m3u-links {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa; /* Ngjyrë gri e lehtë për sfondin e linkeve */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+/* Linket M3U */
+.m3u-links a {
+    display: block;
     text-decoration: none;
-    color: blue;
-    font-weight: bold;
+    color: #007bff; /* Ngjyrë blu për tekstin e linkeve */
+    background: #e9ecef; /* Ngjyrë gri për sfondin e linkeve */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-a:hover {
-    color: darkblue;
+/* Efekti i hover për linket */
+.m3u-links a:hover {
+    background: #007bff; /* Ngjyra blu kur kaloni me maus mbi link */
+    color: white;
+}
+
+/* Pjesa e fundme e faqes */
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Respoziviteti për pajisjet mobile */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .kanale button {
+        font-size: 16px;
+    }
+
+    .m3u-links a {
+        font-size: 14px;
+    }
 }

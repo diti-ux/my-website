@@ -1,4 +1,4 @@
-// Lista e linkeve M3U për Kanale Falas
+// Lista e linkeve M3U për "Kanale Falas"
 const linketM3U = [
     "https://example.com/link1.m3u",
     "https://example.com/link2.m3u",
