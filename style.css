@@ -101,9 +101,15 @@ h1 {
     }
 
     .link-container {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
+        background-color: #e9ecef;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;  /* Zgjerohet në të gjithë gjerësinë */
+        max-width: 800px; /* Kufizon gjerësinë maksimale */
+        margin-bottom: 10px;
     }
 
     .m3u-text {
