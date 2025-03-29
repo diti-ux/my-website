@@ -1,26 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanale IPTV 2025</title>
-    <link rel="stylesheet" href="style.css">
+    <title>IPTV Kanale Falas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .kanale {
+            list-style: none;
+            padding: 0;
+        }
+        .kanale li {
+            margin: 10px 0;
+        }
+        .kanale a {
+            text-decoration: none;
+            color: white;
+            background: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .kanale a:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Shiko Kanale IPTV - 2025</h1>
-    
-    <h2>Lista e Kanaleve</h2>
-    <ul id="channels-list">
-        <!-- Këtu do të shtohen linket M3U që do t'ju jepen -->
-    </ul>
-
-    <h2>Linket M3U për Kanalin e Zgjedhur</h2>
-    <div id="links-container" style="display: none;">
-        <ul id="m3u-links-list">
-            <!-- Këtu do të shfaqen linket M3U për kanalin e zgjedhur -->
+    <h1>Mirësevini në IPTV Falas 2025</h1>
+    <div class="container">
+        <h2>Lista e Kanaleve</h2>
+        <ul class="kanale" id="lista-kanaleve">
+            <!-- Këtu do të vendosen linket nga script.js -->
         </ul>
     </div>
 
+    <!-- Lidhja me script.js -->
     <script src="script.js"></script>
 </body>
 </html>
