@@ -1,7 +1,7 @@
 // Këtu mund të shtoni linket M3U për kanalet që dëshironi të shfaqni
 const channels = [
     { 
-        name: "Kanal 1", 
+        name: "Kanal 111", 
         m3uLinks: [
             "http://example.com/kanali1_1.m3u", 
             "http://example.com/kanali1_2.m3u", 
