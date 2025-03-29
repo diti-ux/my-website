@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Falas 2025</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lidhja me stilin -->
+    <title>Kanale Falas IPTV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-        <h1>IPTV Falas 2025</h1>
+        <h1>Kanale Falas IPTV</h1>
 
-        <div class="container">
-            <h2>Kanale IPTV</h2>
-            <ul class="kanale">
-                <li>
-                    <button onclick="shfaqLinket()">Kanale Falas</button>
-                    <div class="m3u-links" id="linket-m3u"></div>
-                </li>
-            </ul>
+        <!-- Butoni "Shtyp këtu" -->
+        <div class="kanale">
+            <button id="kanal1" onclick="shfaqLinket()">Shtyp këtu</button>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2025 IPTV Falas. Të gjitha të drejtat e rezervuara.</p>
+        <!-- Linket M3U që shfaqen kur klikoni Butonin -->
+        <div class="m3u-links" id="kanal1-links" style="display:none;">
+            <a href="https://example.com/kanali1.m3u" target="_blank">Kanal IPTV 1</a>
+            <a href="https://example.com/kanali2.m3u" target="_blank">Kanal IPTV 2</a>
+            <a href="https://example.com/kanali3.m3u" target="_blank">Kanal IPTV 3</a>
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Lidhja me JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

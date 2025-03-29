@@ -1,149 +1,87 @@
-/* Sfondi i faqes dhe stili i përgjithshëm */
+/* Stilet për faqen e përgjithshme */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9; /* Ngjyrë e butë gri për sfondin */
-    color: #333333; /* Ngjyra e tekstit të zezë për kontrast */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    min-height: 100vh; /* Siguron që faqja të mbushë gjithmonë ekranin */
-}
-
-/* Wrapper për mbajtjen e përmbajtjes në qendër */
-.wrapper {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
-    width: 100%;
-    max-width: 900px; /* Këtu mund të përshtatni gjerësinë sipas dëshirës */
     padding: 20px;
+    margin: 0;
 }
 
-/* Titulli kryesor */
+.wrapper {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+/* Titulli */
 h1 {
-    color: #007bff; /* Ngjyrë blu për titullin */
-    font-size: 3em;
-    margin-top: 50px;
-    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-/* Container i faqes */
-.container {
-    background: #ffffff; /* Sfond i bardhë për containerin */
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    font-size: 1.2em;
-    margin-top: 30px;
-    width: 100%;
-}
-
-/* Titulli i seksionit të kanaleve */
-h2 {
-    color: #333333; /* Ngjyra e titullit për seksionin e kanaleve */
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Lista e butonave të kanaleve */
-.kanale {
-    list-style: none;
-    padding: 0;
-}
-
-/* Butonat për kanale */
+/* Butoni "Shtyp këtu" */
 .kanale button {
-    background: #007bff; /* Ngjyrë blu për butonat */
-    color: white;
-    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.5em;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    margin-bottom: 20px;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
-/* Efekti i hover për butonat */
 .kanale button:hover {
-    background: #0056b3; /* Ngjyrë më e errët blu kur kaloni me maus mbi buton */
+    background-color: #0056b3;
 }
 
-/* Shfaqja e linkeve M3U */
+/* Linket M3U që shfaqen kur klikohet Butoni */
 .m3u-links {
-    display: none;
     margin-top: 20px;
-    padding: 20px;
-    background: #f8f9fa; /* Ngjyrë gri e lehtë për sfondin e linkeve */
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Linket M3U */
 .m3u-links a {
     display: block;
-    text-decoration: none;
-    color: #007bff; /* Ngjyrë blu për tekstin e linkeve */
-    background: #e9ecef; /* Ngjyrë gri për sfondin e linkeve */
+    background-color: #e9ecef;
     padding: 10px;
-    margin: 10px 0;
     border-radius: 5px;
-    font-size: 16px;
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
-/* Efekti i hover për linket */
 .m3u-links a:hover {
-    background: #007bff; /* Ngjyra blu kur kaloni me maus mbi link */
+    background-color: #007bff;
     color: white;
 }
 
-/* Pjesa e fundme e faqes */
-.footer {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #6c757d;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Respoziviteti për pajisjet mobile */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2.5em;
+/* Responsivitet për celularët */
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 15px;
     }
 
-    .container {
-        padding: 20px;
-    }
-
-    .kanale button {
-        font-size: 16px;
-    }
-
-    .m3u-links a {
-        font-size: 14px;
-    }
-}
-
-/* Respoziviteti për celularët */
-@media screen and (max-width: 480px) {
     h1 {
         font-size: 2em;
     }
 
-    .container {
-        padding: 15px;
-    }
-
     .kanale button {
-        font-size: 14px;
+        font-size: 1.2em;
     }
 
     .m3u-links a {
-        font-size: 12px;
+        width: 90%;
     }
 }
