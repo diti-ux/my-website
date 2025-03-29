@@ -7,7 +7,7 @@ const linketM3U = [
     "https://example.com/link5.m3u"
 ];
 
-// Funksioni që shfaq linket kur klikojnë Kanal 1
+// Funksioni që shfaq linket kur klikojnë Kanale Falas
 function shfaqLinket() {
     const divLinket = document.getElementById("linket-m3u");
 
