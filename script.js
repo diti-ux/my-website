@@ -1,6 +1,6 @@
 // Lista e linkeve M3U për "Kanale Falas"
 const linketM3U = [
-    "https://example.com/link1.m3u",
+    "http://fs.premium-ott.tv:9600/get.php?username=kMoH9v9AAKeVx5G&password=upADcyqEHEwbDwf&type=m3u_plus&output=ts",
     "https://example.com/link2.m3u",
     "https://example.com/link3.m3u",
     "https://example.com/link4.m3u",
