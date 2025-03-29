@@ -1,55 +1,52 @@
-/* Stilet për faqen e përgjithshme */
+/* Për të qendruar gjithçka në mes të ekranit */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
 }
 
-.wrapper {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+/* Kontejneri kryesor */
+.container {
+    background: white;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
 }
 
 /* Titulli */
 h1 {
-    font-size: 2.5em;
+    font-size: 24px;
     color: #333;
-    margin-bottom: 30px;
 }
 
 /* Butoni "Shtyp këtu" */
-.kanale button {
+button {
     background-color: #007bff;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 1.5em;
+    color: white;
     border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
+    margin-top: 10px;
 }
 
-.kanale button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-/* Linket M3U */
-.m3u-links {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+/* Linket */
+.hidden {
+    display: none;
 }
 
-/* Kontenieri i linkeve */
 .link-container {
     display: flex;
     justify-content: space-between;
@@ -58,17 +55,17 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     width: 100%;
-    max-width: 600px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 
-/* Teksti i linkut */
-.m3u-text {
+/* Teksti i linkut të shfaqet i plotë dhe të përshtatet në ekran */
+.link-text {
     flex-grow: 1;
-    text-align: left;
-    font-size: 1.2em;
-    color: #333;
-    padding-left: 10px;
+    word-break: break-word;  /* Lejon që linku të bjerë në rresht tjetër nëse është shumë i gjatë */
+    overflow: hidden;
+    padding-right: 10px;
+    white-space: normal;
 }
 
 /* Butoni "Kopjo" */
@@ -76,47 +73,24 @@ h1 {
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .copy-btn:hover {
     background-color: #218838;
 }
 
-/* Responsivitet për celularët */
+/* Për ekranet e vogla (telefona) */
 @media (max-width: 600px) {
-    .wrapper {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .kanale button {
-        font-size: 1.2em;
-    }
-
     .link-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #e9ecef;
-        padding: 10px;
-        border-radius: 5px;
-        width: 100%;  /* Zgjerohet në të gjithë gjerësinë */
-        max-width: 800px; /* Kufizon gjerësinë maksimale */
-        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-
-    .m3u-text {
-        padding: 5px 0;
-    }
-
     .copy-btn {
         margin-top: 5px;
+        width: 100%;
+        text-align: center;
     }
 }
