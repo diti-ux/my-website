@@ -15,11 +15,20 @@
             <button id="kanal1" onclick="shfaqLinket()">Shtyp këtu</button>
         </div>
 
-        <!-- Linket M3U që shfaqen kur klikoni Butonin -->
+        <!-- Linket M3U -->
         <div class="m3u-links" id="kanal1-links" style="display:none;">
-            <a href="https://example.com/kanali1.m3u" target="_blank">Kanal IPTV 1</a>
-            <a href="https://example.com/kanali2.m3u" target="_blank">Kanal IPTV 2</a>
-            <a href="https://example.com/kanali3.m3u" target="_blank">Kanal IPTV 3</a>
+            <div class="link-container">
+                <span class="m3u-text">https://example.com/kanali1.m3u</span>
+                <button class="copy-btn" onclick="kopjoLink(this)">Kopjo</button>
+            </div>
+            <div class="link-container">
+                <span class="m3u-text">https://example.com/kanali2.m3u</span>
+                <button class="copy-btn" onclick="kopjoLink(this)">Kopjo</button>
+            </div>
+            <div class="link-container">
+                <span class="m3u-text">https://example.com/kanali3.m3u</span>
+                <button class="copy-btn" onclick="kopjoLink(this)">Kopjo</button>
+            </div>
         </div>
     </div>
 

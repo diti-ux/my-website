@@ -14,7 +14,6 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    word-wrap: break-word;
 }
 
 /* Titulli */
@@ -41,30 +40,50 @@ h1 {
     background-color: #0056b3;
 }
 
-/* Linket M3U që shfaqen kur klikohet Butoni */
+/* Linket M3U */
 .m3u-links {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-.m3u-links a {
-    display: block;
+/* Kontenieri i linkeve */
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #e9ecef;
     padding: 10px;
     border-radius: 5px;
-    text-decoration: none;
-    color: #007bff;
+    width: 100%;
+    max-width: 600px;
     margin-bottom: 10px;
-    width: 80%;
-    text-align: center;
+}
+
+/* Teksti i linkut */
+.m3u-text {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 1.2em;
+    color: #333;
+    padding-left: 10px;
+}
+
+/* Butoni "Kopjo" */
+.copy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.m3u-links a:hover {
-    background-color: #007bff;
-    color: white;
+.copy-btn:hover {
+    background-color: #218838;
 }
 
 /* Responsivitet për celularët */
@@ -81,7 +100,17 @@ h1 {
         font-size: 1.2em;
     }
 
-    .m3u-links a {
-        width: 90%;
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .m3u-text {
+        padding: 5px 0;
+    }
+
+    .copy-btn {
+        margin-top: 5px;
     }
 }
