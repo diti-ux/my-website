@@ -9,13 +9,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-height: 100vh; /* Siguron që faqja të mbushë gjithmonë ekranin */
 }
 
 /* Wrapper për mbajtjen e përmbajtjes në qendër */
 .wrapper {
     text-align: center;
     width: 100%;
-    max-width: 900px;
+    max-width: 900px; /* Këtu mund të përshtatni gjerësinë sipas dëshirës */
+    padding: 20px;
 }
 
 /* Titulli kryesor */
@@ -34,6 +36,7 @@ h1 {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     font-size: 1.2em;
     margin-top: 30px;
+    width: 100%;
 }
 
 /* Titulli i seksionit të kanaleve */
@@ -88,4 +91,59 @@ h2 {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    font-size: 16px
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efekti i hover për linket */
+.m3u-links a:hover {
+    background: #007bff; /* Ngjyra blu kur kaloni me maus mbi link */
+    color: white;
+}
+
+/* Pjesa e fundme e faqes */
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Respoziviteti për pajisjet mobile */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .kanale button {
+        font-size: 16px;
+    }
+
+    .m3u-links a {
+        font-size: 14px;
+    }
+}
+
+/* Respoziviteti për celularët */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .kanale button {
+        font-size: 14px;
+    }
+
+    .m3u-links a {
+        font-size: 12px;
+    }
+}
