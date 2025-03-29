@@ -3,7 +3,7 @@ const channels = [
     { 
         name: "Kanal 1", 
         m3uLinks: [
-            "http://fs.premium-ott.tv:9600/get.php?username=kMoH9v9AAKeVx5G&password=upADcyqEHEwbDwf&type=m3u_plus&output=ts", 
+            "http://example.com/kanali1_3.m3u", 
             "http://example.com/kanali1_2.m3u", 
             "http://example.com/kanali1_3.m3u"
         
